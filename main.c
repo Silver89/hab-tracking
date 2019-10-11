@@ -29,8 +29,6 @@ void transmitGpsData(){
   
 	if (gps.location.isUpdated())
 	{
-		//GPS: 17443400, 50.123456, N, 0.345678, E, 7, 106.50
-
 		char strdate[16], strlat[16], strlng[16], strsat[16], strmeter[16];
 		
 		dtostrf(gps.time.value(), 8, 0, strdate);
